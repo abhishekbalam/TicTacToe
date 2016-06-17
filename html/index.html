@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content='width=device-width,height=device-height,initial scale=1'>
+    <script src='../script/main.js'></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link  rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../images/TicTactoe.ico">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    
+    
+    <!--[if IE]><link rel="shortcut icon" href="http://cdnicons.toucharcade.com/icons/672/538299_larger.png"><![endif]-->
+    <link rel="icon" href="http://cdnicons.toucharcade.com/icons/672/538299_larger.png">
+    
+    
+    <title>TicTacToe</title>
+</head>
+<body onload="popup()">
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1668783343402463";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="lightbox" id="popup">
+            <div id="form">
+                <div class="close" onclick= "Close()">X</div>
+            <center><div id="wel">Welcome</div></center>
+                
+            <form>
+                <center class="asa">Player 1 enter your name :
+                <input type="text" id="player1"></center>
+                <br>
+                <center >
+                Player 2 enter your name :
+                <input type="text" id="player2"></center>
+                <br>
+		
+                <div id="submit" onclick="Submit()"> Play</div>
+                <center><p><center><br>Player 1 is X and gets to play first.<br></p></center><br>
+            </form>
+            </div>
+    </div>
+    <header draggable="true">Tic-Tac-Toe</header>
+    <div id = "board">
+        <div id = "base">
+        <button id= "a1" onclick="clicked(this)"></button>
+        <button id= "a2" onclick="clicked(this)"></button> 
+        <button id= "a3" onclick="clicked(this)"></button> 
+        <button id= "a4" onclick="clicked(this)"></button> 
+        <button id= "a5" onclick="clicked(this)"></button> 
+        <button id= "a6" onclick="clicked(this)"></button> 
+        <button id= "a7" onclick="clicked(this)"></button> 
+        <button id= "a8" onclick="clicked(this)"></button> 
+        <button id= "a9" onclick="clicked(this)"></button>
+            </div>
+    </div>
+    <div id="clear" onclick="again()">Play Again</div>
+    <br><center><div class="fb-share-button" data-href="https://tictactoe.website.tk" data-layout="button"></div></center><br>
+    <footer>-Abhishek Balam</footer>
+    <div class="lightbox" id="win" onclick="Close()">
+        <div class="close" id="close2" onclick="Close()">X</div>
+            <div id="winner"></div>
+        
+    </div>
+</body>
+</html>
