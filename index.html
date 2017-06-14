@@ -20,14 +20,6 @@
     <title>TicTacToe</title>
 </head>
 <body onload="popup()">
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1668783343402463";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
     <div class="lightbox" id="popup">
             <div id="form">
                 <div class="close" onclick= "Close()">X</div>
@@ -62,7 +54,7 @@
             </div>
     </div>
     <div id="clear" onclick="again()">Play Again</div>
-    <br><center><div class="fb-share-button" data-href="https://abhishekbalam.github.io/Tic-Tac-Toe-Website" data-layout="button"></div></center><br>
+    <br><br>
     <footer>-Abhishek Balam</footer>
     <div class="lightbox" id="win" onclick="Close()">
         <div class="close" id="close2" onclick="Close()">X</div>
